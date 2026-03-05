@@ -38,18 +38,24 @@ addCommandAlias(
   "typeidJVM/test; chunkJVM/test; schemaJVM/test; streamsJVM/test; schema-toonJVM/test; schema-messagepackJVM/test; schema-avro/test; schema-thrift/test; schema-bson/test; schema-xmlJVM/test; schema-csvJVM/test; contextJVM/test; scopeJVM/test; mediatypeJVM/test"
 )
 addCommandAlias(
-  "testJS",
-  "typeidJS/test; chunkJS/test; schemaJS/test; streamsJS/test; schema-toonJS/test; schema-messagepackJS/test; schema-xmlJS/test; schema-csvJS/test; contextJS/test; scopeJS/test; mediatypeJS/test"
+  "testJS1",
+  "typeidJS/test; chunkJS/test; schemaJS/test; streamsJS/test; schema-toonJS/test; schema-messagepackJS/test; schema-xmlJS/test; mediatypeJS/test"
 )
+addCommandAlias(
+  "testJS2",
+  "schema-csvJS/test; contextJS/test; scopeJS/test"
+)
+addCommandAlias("testJS", "testJS1; testJS2")
 
 addCommandAlias(
-  "docJVM",
-  "typeidJVM/doc; chunkJVM/doc; schemaJVM/doc; streamsJVM/doc; schema-toonJVM/doc; schema-messagepackJVM/doc; schema-avro/doc; schema-thrift/doc; schema-bson/doc; schema-xmlJVM/doc; schema-csvJVM/doc; contextJVM/doc; scopeJVM/doc; mediatypeJVM/doc"
+  "docJS1",
+  "typeidJS/doc; chunkJS/doc; schemaJS/doc; streamsJS/doc; schema-toonJS/doc; schema-messagepackJS/doc; schema-xmlJS/doc; mediatypeJS/doc"
 )
 addCommandAlias(
-  "docJS",
-  "typeidJS/doc; chunkJS/doc; schemaJS/doc; streamsJS/doc; schema-toonJS/doc; schema-messagepackJS/doc; schema-xmlJS/doc; schema-csvJS/doc; contextJS/doc; scopeJS/doc; mediatypeJS/doc"
+  "docJS2",
+  "schema-csvJS/doc; contextJS/doc; scopeJS/doc"
 )
+addCommandAlias("docJS", "docJS1; docJS2")
 
 lazy val root = project
   .in(file("."))
