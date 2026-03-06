@@ -48,6 +48,10 @@ addCommandAlias(
 addCommandAlias("testJS", "testJS1; testJS2")
 
 addCommandAlias(
+  "docJVM",
+  "typeidJVM/doc; chunkJVM/doc; schemaJVM/doc; streamsJVM/doc; schema-toonJVM/doc; schema-messagepackJVM/doc; schema-avro/doc; schema-thrift/doc; schema-bson/doc; schema-xmlJVM/doc; schema-csvJVM/doc; contextJVM/doc; scopeJVM/doc; mediatypeJVM/doc"
+)
+addCommandAlias(
   "docJS1",
   "typeidJS/doc; chunkJS/doc; schemaJS/doc; streamsJS/doc; schema-toonJS/doc; schema-messagepackJS/doc; schema-xmlJS/doc; mediatypeJS/doc"
 )
