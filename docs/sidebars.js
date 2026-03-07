@@ -39,11 +39,12 @@ const sidebars = {
            ]
          },
          "reference/context",
-         "scope",
+         "reference/combinators",
          "reference/docs",
          "reference/json",
          "reference/json-patch",
          "reference/json-schema",
+         "scope",
          "reference/xml",
          "reference/syntax",
          "reference/media-type",
